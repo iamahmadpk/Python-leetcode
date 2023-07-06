@@ -27,6 +27,9 @@ class Solution:
                 else: 
                     stack.append(c)	#if encounters opening bracket then append in stack
             return True if not stack else False
-            
+sol = Solution()
+s = "({})"
+result = sol.isValid(s)
+print(result)            
 #Time Complexity:	O(n), beacuse we will iterate the whole string only one time ..n is the nubmer of elements in string
 #Space Complexity:	(n), stack will take extra space n is the number of characters appended to stack
